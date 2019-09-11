@@ -23,3 +23,4 @@ Running The App
 After the database is set up the user then needs to install the Inquirer and MySQL npm packages. First the user must type "init -y" in their terminal and press enter. Then in the terminal the user will type "npm i inquirer mysql". This will install the packages necessary to run the program. Lastly, start the program by typing "node bamazonCustomer.js" in their terminal and pressing enter to begin shopping.
 
 More issue tracking coming.
+![](screenshotsbamazon%2png%201)
