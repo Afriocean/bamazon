@@ -5,10 +5,10 @@ var mysql = require("mysql");
 // this creates the MySQL connection
 var connection = mysql.createConnection({
   host: "localhost",
-  port: 3000,
+  port: 3306,
   user: "root",
-  password: "root",
-  database: "bamazon"
+  password: "",
+  database: "bamazon_DB"
 });
 
 // this check if you're connecting to your database
@@ -42,7 +42,10 @@ function userShop() {
     "SELECT * FROM products",
     // This displays the table of products the user can choose from.
     function(err, res) {
-      if (err) throw err;
+      if (err) {
+        console.log (err);
+        throw err;
+    }
       console.log("\n");
       console.table(res);
       // This is where I store the user's answers from inquirer
